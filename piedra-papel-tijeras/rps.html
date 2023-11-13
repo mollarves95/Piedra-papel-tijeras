@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra | Papel | Tijeras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-violet-500 to-fuchsia-500 font-mono text-fuchsia-950 flex-col justify-around items-center">
+    <h1 class="font-bold text-3xl text-center mt-[24px] mb-[60px] md:text-[35px]"><span class="text-pink-800">Piedra</span> | <span class="text-yellow-500">Papel</span> | <span class="text-blue-700">Tijeras</span></h1>
+    <div id="cont-batalla" class="flex justify-center items-center">
+        <div id="img-jugador" class="w-[120px] h-[120px] cursor-pointer shadow-lg shadow-white rounded-full md:w-[150px] md:h-[150px] lg:w-[170px] lg:h-[170px]"></div>
+        <div class="flex justify-center items-center">
+            <p class="text-3xl px-7 md:px-9">VS</p>
+        </div>
+        <div id="img-pc" class="w-[120px] h-[120px] cursor-pointer shadow-lg shadow-white rounded-full md:w-[150px] md:h-[150px] lg:w-[170px] lg:h-[170px]"></div>
+    </div>
+    <div class="flex justify-center items-center mt-[30px]">
+        <p id="msj-batalla" class="text-3xl font-bold md:text-[40px]"></p>
+    </div>
+    <div class="mt-[80px] lg:mt-[50px]">
+        <h2 class="text-xl text-center pb-[30px] md:text-2xl">Elije tu jugada</h2>
+        <div class="flex justify-center items-center">
+            <img id="btn-piedra" class="w-[100px] h-[100px] cursor-pointer shadow-lg shadow-white rounded-full md:w-[120px] md:h-[120px] lg:w-[130px] lg:h-[130px]" src="img/piedra.png" alt="piedra">
+            <img id="btn-papel" class="w-[100px] h-[100px] mx-10 cursor-pointer shadow-lg shadow-white rounded-full md:w-[120px] md:h-[120px] lg:w-[130px] lg:h-[130px]" src="img/papel.png" alt="papel">
+            <img id="btn-tijeras" class="w-[100px] h-[100px] cursor-pointer shadow-lg shadow-white rounded-full md:w-[120px] md:h-[120px] lg:w-[130px] lg:h-[130px]" src="img/tijeras.png" alt="tijeras">
+        </div>
+    </div>
+    <table>
+        <p></p>
+    </table>
+    <script src="rps.js"></script>
+</body>
+</html>
